@@ -1,0 +1,45 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/StyleSheet.uss?fileID=7433441132597879392&amp;guid=02b7aaa9e224d3a40b348036da296426&amp;type=3#StyleSheet"/>
+    <ui:VisualElement name="main-container" style="flex-grow: 1;">
+        <ui:VisualElement name="main-menu-container" style="flex-grow: 1; position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.95; background-color: rgb(0, 0, 0); padding-top: 100px; padding-bottom: 100px; flex-direction: row; display: flex;">
+            <ui:VisualElement name="start-menu-container" style="flex-grow: 1; min-width: 510px; max-width: 510px; background-color: rgb(22, 211, 97); opacity: 0.36; align-items: center; padding-top: 30px; font-size: 20px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-width: 10px; border-right-width: 10px; border-bottom-width: 10px; border-left-width: 0; border-top-left-radius: 0; border-top-right-radius: 15px; border-bottom-right-radius: 15px; border-bottom-left-radius: 0; justify-content: flex-start;">
+                <ui:Label text="How does the game work?" name="info-header" class="info-header"/>
+                <ui:Label text="Click on the &quot;Play&quot; button to jump into the destoyed world.&#10;&#10;You are playing as the green tank, your objective is to destroy the Blue Enemy tank.&#10;&#10;To destroy the enemy, you need to work with the power, angle of the tank barrel.&#10;&#10;Press the Up/Down or the W/S keys to decide the Power.&#10;&#10;Press the Left/Right or the A/D keys to decide your angle.&#10;&#10;You are the top-left score.&#10;&#10;Achieve 10 Points to win the stand-down." name="info-label" class="info-label" style="white-space: pre-wrap; min-width: 439px; max-width: 439px;"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="middle-menu-container" style="flex-grow: 1; justify-content: flex-start; align-items: center; min-width: 900px; min-height: auto; max-width: 1000px; aspect-ratio: 1; align-content: flex-start; align-self: flex-start; padding-top: 117px;">
+                <ui:Label text="Tank Game" name="main-header" class="main-header" style="-unity-font-definition: url(&quot;project://database/Assets/PanelRenderer/PressStart2P-Regular.ttf?fileID=12800000&amp;guid=54cbda4af25265748842b0981b95b315&amp;type=3#PressStart2P-Regular&quot;); font-size: 70px; color: rgb(255, 255, 255);"/>
+                <ui:Label text="The Game" name="main-header-2" class="main-header-2"/>
+                <ui:VisualElement name="play-container" style="flex-grow: 1; min-height: 501px; max-height: 501px; flex-direction: row; justify-content: space-evenly; max-width: 750px; min-width: 750px; margin-top: 50px;">
+                    <ui:Button text="Play" name="play-button" class="button-play"/>
+                    <ui:Button text="Exit" name="exit-button" class="button-exit"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="end-menu-container" style="flex-grow: 1; min-width: 510px; max-width: 510px; border-left-color: rgb(255, 255, 255); border-right-color: rgb(255, 255, 255); border-top-color: rgb(255, 255, 255); border-bottom-color: rgb(255, 255, 255); border-top-width: 10px; border-right-width: 0; border-bottom-width: 10px; border-left-width: 10px; border-top-left-radius: 15px; border-top-right-radius: 0; border-bottom-right-radius: 0; border-bottom-left-radius: 15px; background-color: rgb(243, 40, 40); padding-top: 30px; align-items: center; opacity: 0.5;">
+                <ui:Label text="How Does The Enemy Work?" name="enemy-explain-header" class="diff-label" style="color: rgb(255, 153, 153); max-width: 400px; white-space: normal; -unity-text-align: upper-center; letter-spacing: 10px; word-spacing: 8px; -unity-paragraph-spacing: 0; margin-bottom: 40px;"/>
+                <ui:Label text="Your Objective is to destroy the Enemy Tank.&#10;&#10;The Enemy Tank is coded with an AI system.&#10;&#10;The Enemy may seem not to know where to shoot. But it will find your location in a blink of an eye.&#10;&#10;That is because the Enemy works in Stages up to Three. If it reaches that stage, it is almost always game over for your tank.&#10;&#10;The Stages reset if one of the Tanks got destroyed.&#10;&#10;If the Enemy Reaches 10 points, it will win.&#10;&#10;Do not underestimate the enemy." name="enemy-explain-label" class="enemy-label" style="color: rgb(255, 175, 175); -unity-font-style: bold; min-width: 439px; max-width: 439px; white-space: normal;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="score-container" style="flex-grow: 1; height: 200px; max-height: 200px; min-height: 200px; flex-direction: row; justify-content: space-between; padding-left: 80px; padding-right: 80px; align-items: center; padding-top: 80px; display: none;">
+            <ui:Label text="0" name="player-score-label" class="score-label"/>
+            <ui:Label text="0" name="enemy-score-label" class="score-label"/>
+            <ui:VisualElement name="tank-stats-container" style="flex-grow: 1; position: absolute; bottom: auto; left: 0; min-width: 580px; min-height: 85px; top: 995px; width: 580px; height: 85px; background-color: rgb(77, 77, 77); max-width: 580px; flex-direction: row; border-top-width: 6px; border-right-width: 6px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 0; border-top-right-radius: 14px; border-bottom-right-radius: 0; border-bottom-left-radius: 0;">
+                <ui:VisualElement name="angle-container" style="flex-grow: 1; flex-direction: row; justify-content: flex-start; align-items: center; padding-left: 10px; border-top-right-radius: 0;">
+                    <ui:Label text="Power:" name="label" class="stats-label"/>
+                    <ui:Label text="0" name="power-label" class="stats-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="power-container" style="flex-grow: 1; flex-direction: row; align-items: center; padding-left: 0;">
+                    <ui:Label text="Angle:" name="label" class="stats-label"/>
+                    <ui:Label text="0" name="angle-label" class="stats-label"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="game-over-container" style="flex-grow: 1; opacity: 0.95; background-color: rgb(0, 0, 0); align-items: center; padding-top: 0; position: absolute; top: 0; right: 0; bottom: 0; left: 0; align-self: flex-start; justify-content: center; display: none;">
+            <ui:Label text="You Lose!" name="game-over-label" class="main-header"/>
+            <ui:Label text="The end results are: 0 / 0" name="game-over-score" class="main-header-2" style="padding-bottom: 0; padding-top: 14px;"/>
+            <ui:VisualElement name="game-over-buttons" style="flex-grow: 1; min-width: 700px; max-width: 700px; min-height: 600px; max-height: 600px; padding-top: 50px; padding-left: 30px; padding-right: 30px; flex-wrap: wrap; flex-direction: row; align-items: flex-start; justify-content: space-around;">
+                <ui:Button text="Play Again" name="play-again-button" class="button-play"/>
+                <ui:Button text="Exit" name="exit-button" class="button-exit"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,165 @@
+:root {
+}
+
+.score-label {
+    -unity-font-style: bold;
+    color: rgb(255, 255, 255);
+    -unity-font-definition: url("project://database/Assets/PanelRenderer/PressStart2P-Regular.ttf?fileID=12800000&guid=54cbda4af25265748842b0981b95b315&type=3#PressStart2P-Regular");
+    font-size: 120px;
+}
+
+.info-header {
+    align-self: auto;
+    color: rgb(111, 255, 125);
+    -unity-font-style: bold;
+    -unity-font-definition: url("project://database/Assets/PanelRenderer/PressStart2P-Regular.ttf?fileID=12800000&guid=54cbda4af25265748842b0981b95b315&type=3#PressStart2P-Regular");
+    min-width: 350px;
+    max-width: 350px;
+    -unity-text-align: upper-center;
+    white-space: pre-wrap;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.info-label {
+    font-size: 18px;
+    -unity-font-definition: url("project://database/Assets/PanelRenderer/PressStart2P-Regular.ttf?fileID=12800000&guid=54cbda4af25265748842b0981b95b315&type=3#PressStart2P-Regular");
+    color: rgb(112, 255, 126);
+    -unity-font-style: bold;
+    min-width: 350px;
+    max-width: 350px;
+    -unity-text-align: upper-center;
+}
+
+.main-header {
+    -unity-font-definition: url("project://database/Assets/PanelRenderer/PressStart2P-Regular.ttf?fileID=12800000&guid=54cbda4af25265748842b0981b95b315&type=3#PressStart2P-Regular");
+    color: rgb(255, 255, 255);
+    font-size: 90px;
+}
+
+.main-header-2 {
+    font-size: 40px;
+    -unity-font-definition: url("project://database/Assets/PanelRenderer/PressStart2P-Regular.ttf?fileID=12800000&guid=54cbda4af25265748842b0981b95b315&type=3#PressStart2P-Regular");
+    color: rgb(255, 255, 255);
+    padding-bottom: 50px;
+}
+
+.button-play {
+    min-height: 115px;
+    max-height: 115px;
+    min-width: 300px;
+    max-width: 300px;
+    -unity-font-definition: url("project://database/Assets/PanelRenderer/PressStart2P-Regular.ttf?fileID=12800000&guid=54cbda4af25265748842b0981b95b315&type=3#PressStart2P-Regular");
+    font-size: 20px;
+    -unity-font-style: bold;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-left-width: 8px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(120, 224, 40);
+    margin-bottom: 30px;
+}
+
+.button-exit {
+    min-height: 115px;
+    max-height: 115px;
+    min-width: 300px;
+    max-width: 300px;
+    -unity-font-definition: url("project://database/Assets/PanelRenderer/PressStart2P-Regular.ttf?fileID=12800000&guid=54cbda4af25265748842b0981b95b315&type=3#PressStart2P-Regular");
+    font-size: 20px;
+    -unity-font-style: bold;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-left-width: 8px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 50, 50);
+    padding-bottom: 0;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: 30px;
+}
+
+.button-play:hover {
+    -unity-font-definition: url("project://database/Assets/PanelRenderer/PressStart2P-Regular.ttf?fileID=12800000&guid=54cbda4af25265748842b0981b95b315&type=3#PressStart2P-Regular");
+    -unity-font-style: bold;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(12, 155, 0);
+}
+
+.button-exit:hover {
+    background-color: rgb(145, 7, 7);
+}
+
+.diff-label {
+    -unity-font-definition: url("project://database/Assets/PanelRenderer/PressStart2P-Regular.ttf?fileID=12800000&guid=54cbda4af25265748842b0981b95b315&type=3#PressStart2P-Regular");
+    -unity-font-style: bold;
+    font-size: 24px;
+    color: rgb(159, 0, 0);
+}
+
+.main-menu-button {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 115px;
+    max-height: 115px;
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-width: 8px;
+    border-right-width: 8px;
+    border-bottom-width: 8px;
+    border-left-width: 8px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    -unity-font-definition: url("project://database/Assets/PanelRenderer/PressStart2P-Regular.ttf?fileID=12800000&guid=54cbda4af25265748842b0981b95b315&type=3#PressStart2P-Regular");
+    -unity-font-style: bold;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 174, 255);
+}
+
+.main-menu-button:hover {
+    background-color: rgb(0, 92, 141);
+}
+
+.enemy-label {
+    font-size: 18px;
+    -unity-font-definition: url("project://database/Assets/PanelRenderer/PressStart2P-Regular.ttf?fileID=12800000&guid=54cbda4af25265748842b0981b95b315&type=3#PressStart2P-Regular");
+    color: rgb(255, 121, 121);
+    min-width: 350px;
+    max-width: 350px;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    -unity-text-align: upper-center;
+    -unity-font-style: bold;
+}
+
+.stats-label {
+    -unity-font-definition: url("project://database/Assets/PanelRenderer/PressStart2P-Regular.ttf?fileID=12800000&guid=54cbda4af25265748842b0981b95b315&type=3#PressStart2P-Regular");
+    font-size: 24px;
+    -unity-font-style: normal;
+    color: rgb(0, 0, 0);
+    padding-left: 10px;
+}
